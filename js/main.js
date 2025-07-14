@@ -23,15 +23,6 @@ jQuery.stellar({
    scrollProperty: 'scroll',
    positionProperty: 'position',
 });
-
-/*-----------------------------------------------------------------------------------*/
-/* 		Parallax
-/*-----------------------------------------------------------------------------------*/
-$('ul.nav li.dropdown').hover(function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(400);
-}, function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(500).fadeOut(100);
-});
 /*-----------------------------------------------------------------------------------*/
 /* 		Parallax
 /*-----------------------------------------------------------------------------------*/
@@ -54,36 +45,82 @@ $('.block-slide').owlCarousel({
         600:{
             items:2
         },
+        800:{
+            items:3
+        },
+        1000:{
+            items:4
+        },
+        1400:{
+            items:5
+        },
+        1600:{
+            items:6
+        }
+}});
+/*-----------------------------------------------------------------------------------*/
+/* 	GALLERY SLIDER
+/*-----------------------------------------------------------------------------------*/
+$('.block-slide-con').owlCarousel({
+    loop:true,
+    margin:30,
+    nav:true,
+	navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
         1000:{
             items:4
         }
 }});
 /*-----------------------------------------------------------------------------------*/
-/* 	SLIDER REVOLUTION
+/* 	GALLERY SLIDER
 /*-----------------------------------------------------------------------------------*/
-jQuery('.tp-banner').show().revolution({
-	dottedOverlay:"none",
-	delay:10000,
-	startwidth:1170,
-	startheight:900,
-	navigationType:"",
-	navigationArrows:"solo",
-	navigationStyle:"preview1",
-	parallax:"mouse",
-	parallaxBgFreeze:"on",
-	parallaxLevels:[7,4,3,2,5,4,3,2,1,0],												
-	keyboardNavigation:"on",						
-	shadow:0,
-	fullWidth:"on",
-	fullScreen:"off",
-	shuffle:"off",						
-	autoHeight:"off",						
-	forceFullWidth:"off",	
-	fullScreenOffsetContainer:""	
-});
+$('.two-col').owlCarousel({
+    loop:true,
+    margin:30,
+    nav:true,
+	navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        }
+}});
 
 /*-----------------------------------------------------------------------------------*/
-/* 	TESTIMONIAL SLIDER
+/* 	GALLERY SLIDER
+/*-----------------------------------------------------------------------------------*/
+$('.clients-slide').owlCarousel({
+    loop:true,
+    margin:30,
+    nav:false,
+	navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+		400:{
+            items:2
+        },
+        600:{
+            items:4
+        },
+		800:{
+            items:5
+        },
+        1200:{
+            items:8
+        }
+}});
+/*-----------------------------------------------------------------------------------*/
+/* 	Single SLIDER
 /*-----------------------------------------------------------------------------------*/
 $(".single-slide").owlCarousel({ 
     items : 1,
@@ -97,6 +134,9 @@ $(".single-slide").owlCarousel({
 	pagination : true,
 	animateOut: 'fadeOut'	
 });
+/*-----------------------------------------------------------------------------------*/
+/* 	Item Slider
+/*-----------------------------------------------------------------------------------*/
 $('.item-slide').owlCarousel({
     loop:true,
     margin:30,
@@ -118,10 +158,9 @@ $('.item-slide').owlCarousel({
     }
 });
 /* ------------------------------------------------------------------------ 
-   SEARCH OVERLAP
+   Shop Slider
 ------------------------------------------------------------------------ */
-$(window).load(function() {
-  $('#shop-thumb').flexslider({
+$('#shop-thumb').flexslider({
     animation: "slide",
     controlNav: false,
     animationLoop: false,
@@ -129,14 +168,13 @@ $(window).load(function() {
     itemWidth: 210,
     itemMargin: 5,
     asNavFor: '#slider-shop'
-  });
+});
 $('#slider-shop').flexslider({
     animation: "slide",
     controlNav: false,
     animationLoop: false,
     slideshow: false,
     sync: "#shop-thumb"
-  });
 });
 /* ------------------------------------------------------------------------ 
    SEARCH OVERLAP
@@ -147,83 +185,6 @@ jQuery('.search-open').on('click', function(){
 jQuery('.search-close').on('click', function(){
 	jQuery('.search-inside').fadeOut();
 });
-/*-----------------------------------------------------------------------------------*/
-/* 		Active Menu Item on Page Scroll
-/*-----------------------------------------------------------------------------------*/
-$(window).scroll(function(event) {
-		Scroll();
-});	
-$('.scroll a').on('click', function() {  
-	$('html, body').animate({scrollTop: $(this.hash).offset().top -0}, 1000);
-		return false;
-});
-// User define function
-function Scroll() {
-var contentTop      =   [];
-var contentBottom   =   [];
-var winTop      =   $(window).scrollTop();
-var rangeTop    =   0;
-var rangeBottom =   1000;
-$('nav').find('.scroll a').each(function(){
-	contentTop.push( $( $(this).attr('href') ).offset().top);
-		contentBottom.push( $( $(this).attr('href') ).offset().top + $( $(this).attr('href') ).height() );
-})
-$.each( contentTop, function(i){
-if ( winTop > contentTop[i] - rangeTop ){
-	$('nav li.scroll')
-	  .removeClass('active')
-		.eq(i).addClass('active');			
-}}  )};
-});
-/*-----------------------------------------------------------------------------------*/
-/*    CONTACT FORM
-/*-----------------------------------------------------------------------------------*/
-function checkmail(input){
-  var pattern1=/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-  	if(pattern1.test(input)){ return true; }else{ return false; }}     
-    function proceed(){
-    	var name = document.getElementById("name");
-		var email = document.getElementById("email");
-		var company = document.getElementById("company");
-		var web = document.getElementById("website");
-		var msg = document.getElementById("message");
-		var errors = "";
-		if(name.value == ""){ 
-		name.className = 'error';
-	  	  return false;}    
-		  else if(email.value == ""){
-		  email.className = 'error';
-		  return false;}
-		    else if(checkmail(email.value)==false){
-		        alert('Please provide a valid email address.');
-		        return false;}
-		    else if(company.value == ""){
-		        company.className = 'error';
-		        return false;}
-		   else if(web.value == ""){
-		        web.className = 'error';
-		        return false;}
-		   else if(msg.value == ""){
-		        msg.className = 'error';
-		        return false;}
-		   else 
-		  {
-	$.ajax({
-		type: "POST",
-		url: "php/submit.php",
-		data: $("#contact_form").serialize(),
-		success: function(msg){
-		//alert(msg);
-		if(msg){
-			$('#contact_form').fadeOut(1000);
-			$('#contact_message').fadeIn(1000);
-				document.getElementById("contact_message");
-			 return true;
-		}}
-	});
-}};
-
-
 /*-----------------------------------------------------------------------------------
     Animated progress bars
 /*-----------------------------------------------------------------------------------*/
@@ -237,29 +198,61 @@ $('.progress-bars').waypoint(function() {
 	offset: '100%',
     triggerOnce: true 
 });
-
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-
-
-jQuery(document).ready(function($){
-	var isLateralNavAnimating = false;
-	
-	//open/close lateral navigation
-	$('.cd-nav-trigger').on('click', function(event){
-		event.preventDefault();
-		//stop if nav animation is running 
-		if( !isLateralNavAnimating ) {
-			if($(this).parents('.csstransitions').length > 0 ) isLateralNavAnimating = true; 
-			
-			$('body').toggleClass('navigation-is-open');
-			$('.cd-navigation-wrapper').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-				//animation is over
-				isLateralNavAnimating = false;
-			});
-		}
-	});
+/*-----------------------------------------------------------------------------------*/
+/*    Magnifine Popups
+/*-----------------------------------------------------------------------------------*/
+$('.popup-with-zoom-anim').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		fixedBgPos: true,
+		overflowY: 'auto',
+		closeBtnInside: true,
+		preloader: false,
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-zoom-in'
+});
+$('.popup-with-move-anim').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		fixedBgPos: true,
+		overflowY: 'auto',
+		closeBtnInside: true,
+		preloader: false,
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-slide-bottom'
+});
+$('.popup-with-zoom-anim').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		fixedBgPos: true,
+		overflowY: 'auto',
+		closeBtnInside: true,
+		preloader: false,
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-zoom-in'
+});
+$('.popup-with-move-anim').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		fixedBgPos: true,
+		overflowY: 'auto',
+		closeBtnInside: true,
+		preloader: false,
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-slide-bottom'
+});
+$('.simple-ajax-popup-align-top').magnificPopup({
+	type: 'ajax',
+	alignTop: true,
+	overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+});
+$('.simple-ajax-popup').magnificPopup({
+	type: 'ajax'
+});
 });
 
 

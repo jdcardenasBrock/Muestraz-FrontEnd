@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="M_Adnan">
-<title>ECOSHOP - Multipurpose eCommerce HTML5 Template</title>
+<title>BoShop - Multipurpose eCommerce HTML5 Template</title>
 
 <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
 <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
@@ -20,13 +20,13 @@
 <link href="css/main.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet">
+<link href="font/flaticon.css" rel="stylesheet">
 
 <!-- JavaScripts -->
 <script src="js/modernizr.js"></script>
 
 <!-- Online Fonts -->
-<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900|Poppins:300,400,500,600,700|Montserrat:300,400,500,600,700,800" rel="stylesheet">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,7 +38,7 @@
 </head>
 <body>
 
-<!-- LOADER -->
+<!-- LOADER --> 
 <div id="loader">
   <div class="position-center-center">
     <div class="ldr"></div>
@@ -48,231 +48,236 @@
 <!-- Wrap -->
 <div id="wrap"> 
   
+  <!-- TOP Bar -->
+  <div class="top-bar">
+    <div class="container-full">
+      <p><i class="icon-envelope"></i> Info@boshop.com </p>
+      <p class="call"> <i class="icon-call-in"></i> 001 234 7895 </p>
+      
+      <!-- Login Info -->
+      <div class="login-info">
+        <ul>
+          <li><a href="login.html">LOGIN</a></li>
+          <li><a href="#."> MY ACCOUNT </a></li>
+          <li><a href="shopping-cart.html">MY CART</a></li>
+          
+          <!-- USER BASKET -->
+          <li class="dropdown user-basket"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> (2) Items <i class="icon-basket-loaded"></i> </a>
+            <ul class="dropdown-menu">
+              <li>
+                <div class="media-left">
+                  <div class="cart-img"> <a href="#"> <img class="media-object img-responsive" src="images/cart-img-1.jpg" alt="..."> </a> </div>
+                </div>
+                <div class="media-body">
+                  <h6 class="media-heading">Rise Skinny Jeans</h6>
+                  <span class="price">129.00 USD</span> <span class="qty">QTY: 01</span> </div>
+              </li>
+              <li>
+                <div class="media-left">
+                  <div class="cart-img"> <a href="#"> <img class="media-object img-responsive" src="images/cart-img-2.jpg" alt="..."> </a> </div>
+                </div>
+                <div class="media-body">
+                  <h6 class="media-heading">Mid Rise Skinny Jeans</h6>
+                  <span class="price">129.00 USD</span> <span class="qty">QTY: 01</span> </div>
+              </li>
+              <li>
+                <h5 class="text-left">SUBTOTAL: <small> 258.00 USD </small></h5>
+              </li>
+              <li class="margin-0">
+                <div class="row">
+                  <div class="col-sm-6"> <a href="shopping-cart.html" class="btn">VIEW CART</a></div>
+                  <div class="col-sm-6 "> <a href="checkout.html" class="btn">CHECK OUT</a></div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
   <!-- header -->
   <header>
     <div class="sticky">
-      <div class="container"> 
+      <div class="container-full"> 
         
         <!-- Logo -->
-        <div class="logo"> <a href="index.html"><img class="img-responsive" src="images/logo.png" alt="" ></a> </div>
-        <nav class="navbar ownmenu">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-open-btn" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"><i class="fa fa-navicon"></i></span> </button>
-          </div>
-          
-           <!-- NAV -->
-          <div class="collapse navbar-collapse" id="nav-open-btn">
+        <div class="logo"> <a href="index.html"><img class="img-responsive" src="images/logo.svg" alt="" ></a> </div>
+        <nav class="navbar ownmenu navbar-expand-lg ">
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span></span> </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="nav">
-              <li class="dropdown active"> <a href="#." class="dropdown-toggle" data-toggle="dropdown">Home</a>
-                <ul class="dropdown-menu">
-                  <li> <a href="index.html">Index Default</a> </li>
-                  <li> <a href="index-1.html">Index 2</a> </li>
-                  <li> <a href="index-2.html">Index 3</a></li>
-                  <li> <a href="index-header-1.html">Index Header 1</a></li>
-                  <li> <a href="index-header-2.html">Index Header 2</a></li>
-                  <li> <a href="index-header-3.html">Index Header 3</a></li>
-                  <li> <a href="index-header-4.html">Index Header 4</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"> <a href="#." class="dropdown-toggle" data-toggle="dropdown">Pages</a>
-                <ul class="dropdown-menu">
-                  <li> <a href="shop_01.html">Shop 01 </a> </li>
-                  <li> <a href="shop_02.html">Shop 02</a> </li>
-                  <li> <a href="shop_03.html">Shop 03 </a> </li>
-                  <li> <a href="shop_04.html">Shop 04 </a> </li>
-                  <li> <a href="product-detail_01.html">Product Detail 01</a> </li>
-                  <li> <a href="product-detail_02.html">Product Detail 02</a> </li>
-                  <li> <a href="shopping-cart.html">Shopping Cart</a> </li>
-                  <li> <a href="checkout.html">Checkout</a> </li>
-                  <li> <a href="about-us_01.html">About 01</a> </li>
-                  <li> <a href="about-us_02.html">About 02</a> </li>
-                  <li> <a href="contact.html">Contact</a> </li>
-                  <li> <a href="blog-list_01.html">Blog List 01</a> </li>
-                  <li> <a href="blog-list_02.html">Blog List 02</a> </li>
-                  <li> <a href="blog-list_03.html">Blog List 03 </a> </li>
-                  <li> <a href="blog-detail_01.html">Blog Detail 01 </a> </li>
-                </ul>
-              </li>
-              <li> <a href="about-us_01.html">About </a> </li>
-              
-              <!-- Two Link Option -->
-              <li class="dropdown"> <a href="#." class="dropdown-toggle" data-toggle="dropdown">Designer</a>
-                <div class="dropdown-menu two-option">
-                  <div class="row">
-                    <ul class="col-sm-6">
-                      <li> <a href="shop_01.html">summer store</a></li>
-                      <li> <a href="shop_01.html"> sarees</a></li>
-                      <li> <a href="shop_01.html"> kurtas</a></li>
-                      <li> <a href="shop_01.html"> shorts & tshirts</a></li>
-                      <li> <a href="shop_01.html"> winter wear</a></li>
-                      <li> <a href="shop_01.html"> jeans</a></li>
-                      <li> <a href="shop_01.html"> bra</a></li>
-                      <li> <a href="shop_01.html"> babydools</a> </li>
-                    </ul>
-                    <ul class="col-sm-6">
-                      <li> <a href="shop_01.html">deodornts</a></li>
-                      <li> <a href="shop_01.html"> skin care</a></li>
-                      <li> <a href="shop_01.html"> make up</a></li>
-                      <li> <a href="shop_01.html"> watch</a></li>
-                      <li> <a href="shop_01.html"> siting bags</a></li>
-                      <li> <a href="shop_01.html"> totes</a></li>
-                      <li> <a href="shop_01.html"> gold rings</a></li>
-                      <li> <a href="shop_01.html"> jewellery</a> </li>
+            <li class="dropdown active"> <a href="#." class="dropdown-toggle" data-toggle="dropdown">Home</a>
+              <ul class="dropdown-menu">
+                <li> <a href="index.html">Index</a> </li>
+                <li> <a href="index-1.html">Index 2</a> </li>
+                <li> <a href="index-2.html">Index 3</a></li>
+                <li> <a href="shop_04.html">Shop Display Layout <span class="sm-tag">Hot</span></a> </li>
+              </ul>
+            </li>
+            <li class="dropdown"> <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
+              <ul class="dropdown-menu">
+                <li> <a href="shop_02.html">Shop Full Left Sidebar</a> </li>
+                <li> <a href="shop_03.html">Shop Shop Right Sidebar </a> </li>
+                <li> <a href="shop_04.html">Shop Creative Layout <span class="sm-tag">Hot</span></a> </li>
+                <li class="dropdown"> <a href="shop_01.html">Shop </a>
+                  <ul class="dropdown-menu animated-3s fadeInRightSm">
+                    <li> <a href="shop_6_col.html">Shop 06 Col </a> </li>
+                    <li> <a href="shop_5_col.html">Shop 05 Col </a> </li>
+                    <li> <a href="shop_4_col.html">Shop 04 Col </a> </li>
+                    <li> <a href="shop_3_col.html">Shop 03 Col </a> </li>
+                  </ul>
+                </li>
+                <li> <a href="product-detail_01.html">Products Detail 01</a> </li>
+                <li> <a href="product-detail_02.html">Products Detail 02</a> </li>
+                <li> <a href="product-detail_03.html">Products Detail 03</a> </li>
+                <li> <a href="shopping-cart.html">Shopping Cart</a> </li>
+                <li> <a href="checkout.html">Checkout</a> </li>
+                <li> <a href="about-us_01.html">About Us</a> </li>
+                <li> <a href="contact.html">Contact</a> </li>
+                <li> <a href="blog-list_01.html">Blog List 01</a> </li>
+                <li> <a href="blog-list_02.html">Blog List 02</a> </li>
+                <li> <a href="blog-list_03.html">Blog List 03 </a> </li>
+                <li> <a href="blog-detail_01.html">Blog Detail 01 </a> </li>
+              </ul>
+            </li>
+            <li> <a href="about-us_01.html">About </a> </li>
+            
+            <!-- Two Link Option -->
+            <li class="dropdown"> <a href="#." class="dropdown-toggle" data-toggle="dropdown">Collection</a>
+              <div class="dropdown-menu two-option">
+                <div class="row">
+                  <ul class="col-sm-6">
+                    <li> <a href="index-2.html"> Summer Store</a></li>
+                    <li> <a href="index-2.html"> Sarees</a></li>
+                    <li> <a href="index-2.html"> Kurtas</a></li>
+                    <li> <a href="index-2.html"> Shorts & tshirts</a></li>
+                    <li> <a href="index-2.html"> Winter wear</a></li>
+                    <li> <a href="index-2.html"> Jeans</a></li>
+                    <li> <a href="index-2.html"> Bra</a></li>
+                    <li> <a href="index-2.html"> Babydools</a> </li>
+                  </ul>
+                  <ul class="col-sm-6">
+                    <li> <a href="index-2.html"> Deodornts</a></li>
+                    <li> <a href="index-2.html"> Skin care</a></li>
+                    <li> <a href="index-2.html"> Make up</a></li>
+                    <li> <a href="index-2.html"> Watch</a></li>
+                    <li> <a href="index-2.html"> Siting bags</a></li>
+                    <li> <a href="index-2.html"> Totes</a></li>
+                    <li> <a href="index-2.html"> Gold rings</a></li>
+                    <li> <a href="index-2.html"> Jewellery</a> </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            
+            <!-- MEGA MENU -->
+            <li class="dropdown megamenu"> <a href="#." class="dropdown-toggle" data-toggle="dropdown">Mega Store</a>
+              <div class="dropdown-menu">
+                <div class="row"> 
+                  
+                  <!-- Shop Pages -->
+                  <div class="col-md-5">
+                    <h6>Shop Pages</h6>
+                    <ul class="col-2-li">
+                      <li> <a href="shop_02.html">Shop Full Left Sidebar</a> </li>
+                      <li> <a href="shop_03.html">Shop Shop Right Sidebar </a> </li>
+                      <li> <a href="shop_04.html">Shop Creative Layout </a> </li>
+                      <li> <a href="shop_01.html">Shop </a></li>
+                      <li> <a href="shop_6_col.html">Shop 06 Col </a> </li>
+                      <li> <a href="shop_5_col.html">Shop 05 Col </a> </li>
+                      <li> <a href="shop_4_col.html">Shop 04 Col </a> </li>
+                      <li> <a href="shop_3_col.html">Shop 03 Col </a> </li>
+                      <li> <a href="product-detail_01.html">Products Detail 01</a> </li>
+                      <li> <a href="product-detail_02.html">Products Detail 02</a> </li>
+                      <li> <a href="product-detail_03.html">Products Detail 03</a> </li>
+                      <li> <a href="shopping-cart.html">Shopping Cart</a> </li>
+                      <li> <a href="checkout.html">Checkout</a> </li>
+                      <li> <a href="about-us_01.html">About Us</a> </li>
+                      <li> <a href="contact.html">Contact</a> </li>
+                      <li> <a href="blog-list_01.html">Blog List 01</a> </li>
+                      <li> <a href="blog-detail_01.html">Blog Detail 01 </a> </li>
                     </ul>
                   </div>
-                </div>
-              </li>
-              
-              <!-- MEGA MENU -->
-              <li class="dropdown megamenu"> <a href="#." class="dropdown-toggle" data-toggle="dropdown">store</a>
-                <div class="dropdown-menu">
-                  <div class="row"> 
-                    
-                    <!-- Shop Pages -->
-                    <div class="col-md-3">
-                      <h6>Shop Pages</h6>
+                  
+                  <!-- Shop Pages -->
+                  <div class="col-md-3">
+                    <h6>Latest items</h6>
+                    <ul>
+                      <li> <a href="index-2.html"> Deodornts</a></li>
+                      <li> <a href="index-2.html"> Skin care</a></li>
+                      <li> <a href="index-2.html"> Make up</a></li>
+                      <li> <a href="index-2.html"> Watch</a></li>
+                      <li> <a href="index-2.html"> Siting bags</a></li>
+                      <li> <a href="index-2.html"> Totes</a></li>
+                      <li> <a href="index-2.html"> Gold rings</a></li>
+                      <li> <a href="index-2.html"> Jewellery</a> </li>
+                    </ul>
+                  </div>
+                  
+                  <!-- Top Rate -->
+                  <div class="col-md-4">
+                    <h6>Top Rate Products</h6>
+                    <div class="top-rated">
                       <ul>
-                        <li> <a href="shop_01.html">Shop 01 </a> </li>
-                        <li> <a href="shop_02.html">Shop 02</a> </li>
-                        <li> <a href="shop_03.html">Shop 03 </a> </li>
-                        <li> <a href="shop_04.html">Shop 04 </a> </li>
-                        <li> <a href="product-detail_01.html">Product Detail 01</a> </li>
-                        <li> <a href="product-detail_02.html">Product Detail 02</a> </li>
-                        <li> <a href="shopping-cart.html">Shopping Cart</a> </li>
-                        <li> <a href="checkout.html">Checkout</a> </li>
+                        <li>
+                          <div class="media-left">
+                            <div class="cart-img"> <a href="#"> <img class="media-object img-responsive" src="images/cart-img-1.jpg" alt="..."> </a> </div>
+                          </div>
+                          <div class="media-body">
+                            <h6 class="media-heading">Best T-Shirt Design</h6>
+                            <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                            <span class="price">129.00 USD</span> </div>
+                        </li>
+                        <li>
+                          <div class="media-left">
+                            <div class="cart-img"> <a href="#"> <img class="media-object img-responsive" src="images/cart-img-2.jpg" alt="..."> </a> </div>
+                          </div>
+                          <div class="media-body">
+                            <h6 class="media-heading">Bag Pack for Child</h6>
+                            <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                            <span class="price">129.00 USD</span> </div>
+                        </li>
+                        <li>
+                          <div class="media-left">
+                            <div class="cart-img"> <a href="#"> <img class="media-object img-responsive" src="images/cart-img-3.jpg" alt="..."> </a> </div>
+                          </div>
+                          <div class="media-body">
+                            <h6 class="media-heading">Bag Pack for Child</h6>
+                            <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                            <span class="price">129.00 USD</span> </div>
+                        </li>
                       </ul>
                     </div>
-                    
-                    <!-- TOp Rate Products -->
-                    <div class="col-md-4">
-                      <h6>TOp Rate Products</h6>
-                      <div class="top-rated">
-                        <ul>
-                          <li>
-                            <div class="media-left">
-                              <div class="cart-img"> <a href="#"> <img class="media-object img-responsive" src="images/cart-img-1.jpg" alt="..."> </a> </div>
-                            </div>
-                            <div class="media-body">
-                              <h6 class="media-heading">WOOD CHAIR</h6>
-                              <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                              <span class="price">129.00 USD</span> </div>
-                          </li>
-                          <li>
-                            <div class="media-left">
-                              <div class="cart-img"> <a href="#"> <img class="media-object img-responsive" src="images/cart-img-2.jpg" alt="..."> </a> </div>
-                            </div>
-                            <div class="media-body">
-                              <h6 class="media-heading">STOOL</h6>
-                              <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                              <span class="price">129.00 USD</span> </div>
-                          </li>
-                          <li>
-                            <div class="media-left">
-                              <div class="cart-img"> <a href="#"> <img class="media-object img-responsive" src="images/cart-img-3.jpg" alt="..."> </a> </div>
-                            </div>
-                            <div class="media-body">
-                              <h6 class="media-heading">WOOD SPOON</h6>
-                              <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                              <span class="price">129.00 USD</span> </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    
-                    <!-- New Arrival -->
-                    <div class="col-md-5">
-                      <h5>NEW ARRIVAL 2016 <span>(Best Collection)</span></h5>
-                      <img class="nav-img" src="images/nav-img.png" alt="" >
-                      <p>Lorem ipsum dolor sit amet,<br>
-                        consectetur adipiscing elit. <br>
-                        Donec faucibus maximus<br>
-                        vehicula.</p>
-                      <a href="#." class="btn btn-small btn-round">SHOP NOW</a> </div>
                   </div>
                 </div>
-              </li>
-              <li> <a href="contact.html"> contact</a> </li>
-            </ul>
-          </div>
-          
-          <!-- Nav Right -->
-          <div class="nav-right">
-            <ul class="navbar-right">
-              
-              <!-- USER INFO -->
-              <li class="dropdown user-acc"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" ><i class="icon-user"></i> </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <h6>HELLO! Jhon Smith</h6>
-                  </li>
-                  <li><a href="#">MY CART</a></li>
-                  <li><a href="#">ACCOUNT INFO</a></li>
-                  <li><a href="#">LOG OUT</a></li>
-                </ul>
-              </li>
-              
-              <!-- USER BASKET -->
-              <li class="dropdown user-basket"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><i class="icon-basket-loaded"></i> </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <div class="media-left">
-                      <div class="cart-img"> <a href="#"> <img class="media-object img-responsive" src="images/cart-img-1.jpg" alt="..."> </a> </div>
-                    </div>
-                    <div class="media-body">
-                      <h6 class="media-heading">WOOD CHAIR</h6>
-                      <span class="price">129.00 USD</span> <span class="qty">QTY: 01</span> </div>
-                  </li>
-                  <li>
-                    <div class="media-left">
-                      <div class="cart-img"> <a href="#"> <img class="media-object img-responsive" src="images/cart-img-2.jpg" alt="..."> </a> </div>
-                    </div>
-                    <div class="media-body">
-                      <h6 class="media-heading">WOOD STOOL</h6>
-                      <span class="price">129.00 USD</span> <span class="qty">QTY: 01</span> </div>
-                  </li>
-                  <li>
-                    <h5 class="text-center">SUBTOTAL: 258.00 USD</h5>
-                  </li>
-                  <li class="margin-0">
-                    <div class="row">
-                      <div class="col-xs-6"> <a href="shopping-cart.html" class="btn">VIEW CART</a></div>
-                      <div class="col-xs-6 "> <a href="checkout.html" class="btn">CHECK OUT</a></div>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-              
-              <!-- SEARCH BAR -->
-              <li class="dropdown"> <a href="javascript:void(0);" class="search-open"><i class=" icon-magnifier"></i></a>
-                <div class="search-inside animated bounceInUp"> <i class="icon-close search-close"></i>
-                  <div class="search-overlay"></div>
-                  <div class="position-center-center">
-                    <div class="search">
-                      <form>
-                        <input type="search" placeholder="Search Shop">
-                        <button type="submit"><i class="icon-check"></i></button>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
+                
+                <!-- MEga Menu Elements -->
+                <div class="mega-menu-elements"> <img src="images/nav-img.png" alt="" > <a href="#." class="btn btn-inverse">Shop Now</a> </div>
+              </div>
+            </li>
+            <li> <a href="contact.html"> contact</a> </li>
+          </ul>
           </div>
         </nav>
+        
+        <!-- Curency -->
+        <div class="curency"> <a href="#." class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> USD<i class="fa fa-angle-down"></i> </a>
+          <div class="dropdown-menu"> <a class="dropdown-item" href="#">EU</a> <a class="dropdown-item" href="#">USD</a> <a class="dropdown-item" href="#">CA</a> <a class="dropdown-item" href="#">PKR</a> </div>
+        </div>
       </div>
     </div>
+    <div class="clearfix"></div>
   </header>
   
   <!--======= SUB BANNER =========-->
   <section class="sub-bnr" data-stellar-background-ratio="0.5">
     <div class="position-center-center">
       <div class="container">
-        <h4>ECOSHOP blog list</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus maximus vehicula. 
-          Sed feugiat, tellus vel tristique posuere, diam</p>
+        <h4>Blog List</h4>
         <ol class="breadcrumb">
           <li><a href="#">Home</a></li>
-          <li class="active">BLOG</li>
+          <li class="active">Blog</li>
         </ol>
       </div>
     </div>
@@ -294,7 +299,7 @@
               <!-- Tittle -->
               <div class="post-tittle left"> <a href="#." class="tittle">The unique Chair By ecoshop</a> 
                 <!-- Post Info --> 
-                <span><i class="primary-color icon-user"></i> by admin</span> <span><i class="primary-color icon-calendar"></i> April 27, 2016</span> <span><i class="primary-color icon-bubble"></i> 05</span> <span><i class="primary-color icon-tag"></i> Furniture</span> </div>
+                <span><i class="primary-color icon-user"></i> by admin</span> <span><i class="primary-color icon-calendar"></i> April 27, 2018</span> <span><i class="primary-color icon-bubble"></i> 05</span> <span><i class="primary-color icon-tag"></i> Furniture</span> </div>
               <!-- Post Content -->
               <div class="text-left">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat dui at lacus aliquet, a consequat enim aliquet. Integer molestie sit amet sem et faucibus. Nunc ornare pharetra dui, vitae auctor orci fringilla eget. Pellentesque in placerat felis. Etiam mollis venenatis luctus. Morbi ac scelerisque mauris. Etiam sodales a nulla ornare viverra. Nunc at blandit neque, bibendum varius purus. <br>
@@ -310,7 +315,7 @@
               <!-- Tittle -->
               <div class="post-tittle left"> <a href="#." class="tittle">Look Beautiful in this Seasons</a> 
                 <!-- Post Info --> 
-                <span><i class="primary-color icon-user"></i> by admin</span> <span><i class="primary-color icon-calendar"></i> April 27, 2016</span> <span><i class="primary-color icon-bubble"></i> 05</span> <span><i class="primary-color icon-tag"></i> Fashion</span> </div>
+                <span><i class="primary-color icon-user"></i> by admin</span> <span><i class="primary-color icon-calendar"></i> April 27, 2018</span> <span><i class="primary-color icon-bubble"></i> 05</span> <span><i class="primary-color icon-tag"></i> Fashion</span> </div>
               <!-- Post Content -->
               <div class="text-left">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat dui at lacus aliquet, a consequat enim aliquet. Integer molestie sit amet sem et faucibus. Nunc ornare pharetra dui, vitae auctor orci fringilla eget. Pellentesque in placerat felis. Etiam mollis venenatis luctus. Morbi ac scelerisque mauris. Etiam sodales a nulla ornare viverra. Nunc at blandit neque, bibendum varius purus. <br>
@@ -326,7 +331,7 @@
               <!-- Tittle -->
               <div class="post-tittle left"> <a href="#." class="tittle">We Craft An Awesome for your Home</a> 
                 <!-- Post Info --> 
-                <span><i class="primary-color icon-user"></i> by admin</span> <span><i class="primary-color icon-calendar"></i> April 27, 2016</span> <span><i class="primary-color icon-bubble"></i> 05</span> <span><i class="primary-color icon-tag"></i> Wood</span> </div>
+                <span><i class="primary-color icon-user"></i> by admin</span> <span><i class="primary-color icon-calendar"></i> April 27, 2018</span> <span><i class="primary-color icon-bubble"></i> 05</span> <span><i class="primary-color icon-tag"></i> Wood</span> </div>
               <!-- Post Content -->
               <div class="text-left">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat dui at lacus aliquet, a consequat enim aliquet. Integer molestie sit amet sem et faucibus. Nunc ornare pharetra dui, vitae auctor orci fringilla eget. Pellentesque in placerat felis. Etiam mollis venenatis luctus. Morbi ac scelerisque mauris. Etiam sodales a nulla ornare viverra. Nunc at blandit neque, bibendum varius purus. <br>
@@ -342,7 +347,7 @@
               <!-- Tittle -->
               <div class="post-tittle left"> <a href="#." class="tittle">The Classic Razor for the Modern Man</a> 
                 <!-- Post Info --> 
-                <span><i class="primary-color icon-user"></i> by admin</span> <span><i class="primary-color icon-calendar"></i> April 27, 2016</span> <span><i class="primary-color icon-bubble"></i> 05</span> <span><i class="primary-color icon-tag"></i> Personal</span> </div>
+                <span><i class="primary-color icon-user"></i> by admin</span> <span><i class="primary-color icon-calendar"></i> April 27, 2018</span> <span><i class="primary-color icon-bubble"></i> 05</span> <span><i class="primary-color icon-tag"></i> Personal</span> </div>
               <!-- Post Content -->
               <div class="text-left">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat dui at lacus aliquet, a consequat enim aliquet. Integer molestie sit amet sem et faucibus. Nunc ornare pharetra dui, vitae auctor orci fringilla eget. Pellentesque in placerat felis. Etiam mollis venenatis luctus. Morbi ac scelerisque mauris. Etiam sodales a nulla ornare viverra. Nunc at blandit neque, bibendum varius purus. <br>
@@ -362,17 +367,14 @@
           </div>
           
           <!-- Sider Bar -->
-          <div class="col-md-3"> 
-            
-            <!-- SEARCH -->
+          <div class="col-md-3">
             <div class="search">
               <input class="form-control" type="search" placeholder="Search">
               <button type="submit"><i class="fa fa-search"></i></button>
             </div>
-            <div class="shop-sidebar"> 
-              
+            <div class="sidebar"> 
               <!-- Category -->
-              <h5 class="shop-tittle margin-bottom-30">category</h5>
+              <h5 class="shop-tittle margin-bottom-20">Category</h5>
               <ul class="shop-cate">
                 <li><a href="#."> Chair <span>24</span></a></li>
                 <li><a href="#."> Bag <span>122</span></a></li>
@@ -408,7 +410,7 @@
               </ul>
               
               <!-- TAGS -->
-              <h5 class="shop-tittle margin-top-60 margin-bottom-30">PAUPLAR TAGS</h5>
+              <h5 class="shop-tittle margin-top-60 margin-bottom-20">Papular Tags</h5>
               <ul class="shop-tags">
                 <li><a href="#.">Towels</a></li>
                 <li><a href="#.">Chair</a></li>
@@ -422,7 +424,7 @@
               </ul>
               
               <!-- BRAND -->
-              <h5 class="shop-tittle margin-top-60 margin-bottom-30">archives</h5>
+              <h5 class="shop-tittle margin-top-60 margin-bottom-10">archives</h5>
               <ul class="shop-cate">
                 <li><a href="#."> January 2015 </a></li>
                 <li><a href="#."> February 2015 </a></li>
@@ -445,111 +447,77 @@
         </div>
       </div>
     </section>
-    
-    <!-- Culture BLOCK -->
-    <section class="cultur-block">
-      <ul>
-        <li> <img src="images/cultur-img-1.jpg" alt="" > </li>
-        <li> <img src="images/cultur-img-2.jpg" alt="" > </li>
-        <li> <img src="images/cultur-img-3.jpg" alt="" > </li>
-        <li> <img src="images/cultur-img-4.jpg" alt="" > </li>
-      </ul>
-      
-      <!-- Culture Text -->
-      <div class="position-center-center">
-        <div class="container">
-          <div class="col-sm-6 center-block">
-            <h4>FOLLOW US @ INSTAGRAM</h4>
-            <p>Phasellus lacinia fermentutm bibendum. Interdum et malante ipuctus non. Nulla lacinia,
-              eros vel fermentum consectetur, ris dolor in ex. </p>
+  </div>
+  
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+        <div class="row"> 
+          <!-- ABOUT Location -->
+          <div class="col-md-4">
+            <div class="about-footer"> <img class="margin-bottom-30" src="images/logo-foot.png" alt="" >
+              <p><i class="icon-pointer"></i> Street No. 12, Newyork 12, <br>
+                MD - 123, USA.</p>
+              <p><i class="icon-call-end"></i> 1.800.123.456789 <br>
+                1.800.123.456789</p>
+              <p><i class="icon-envelope"></i> info@BoShop.com <br>
+                contact@BoShop.com</p>
+            </div>
+          </div>
+          
+          <!-- HELPFUL LINKS -->
+          <div class="col-md-5">
+            <h6>Links</h6>
+            <ul class="link two-half">
+              <li><a href="#."> Products</a></li>
+              <li><a href="#."> Find a Store</a></li>
+              <li><a href="#."> Features</a></li>
+              <li><a href="#."> Privacy Policy</a></li>
+              <li><a href="#."> Blog</a></li>
+              <li><a href="#."> Press Kit </a></li>
+              <li><a href="#."> Products</a></li>
+              <li><a href="#."> Find a Store</a></li>
+              <li><a href="#."> Features</a></li>
+              <li><a href="#."> Privacy Policy</a></li>
+              <li><a href="#."> Blog</a></li>
+              <li><a href="#."> Press Kit </a></li>
+            </ul>
+          </div>
+          
+          <!-- HELPFUL LINKS -->
+          <div class="col-md-3">
+            <h6>Account Info</h6>
+            <ul class="link">
+              <li><a href="#."> Products</a></li>
+              <li><a href="#."> Find a Store</a></li>
+              <li><a href="#."> Features</a></li>
+              <li><a href="#."> Privacy Policy</a></li>
+              <li><a href="#."> Blog</a></li>
+              <li><a href="#."> Press Kit </a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
-    
-    <!-- News Letter -->
-    <section class="news-letter padding-top-150 padding-bottom-150">
+    <!-- Rights -->
+    <div class="rights">
       <div class="container">
-        <div class="heading light-head text-center margin-bottom-30">
-          <h4>NEWSLETTER</h4>
-          <span>Phasellus lacinia fermentum bibendum. Interdum et malesuada fames ac ante ipsumien lacus, eu posuere odi </span> </div>
-        <form>
-          <input type="email" placeholder="Enter your email address" required>
-          <button type="submit">SEND ME</button>
-        </form>
-      </div>
-    </section>
-  </div>
-  
-  <!--======= FOOTER =========-->
-  <footer>
-    <div class="container"> 
-      
-      <!-- ABOUT Location -->
-      <div class="col-md-3">
-        <div class="about-footer"> <img class="margin-bottom-30" src="images/logo-foot.png" alt="" >
-          <p><i class="icon-pointer"></i> Street No. 12, Newyork 12, <br>
-            MD - 123, USA.</p>
-          <p><i class="icon-call-end"></i> 1.800.123.456789</p>
-          <p><i class="icon-envelope"></i> info@ecoshop.com</p>
+        <div class="row">
+          <div class="col-md-6">
+            <p>©  2018 BoShop All right reserved. <a href="https://webicode.com/">webicode</a></p>
+          </div>
+          <div class="col-md-6 text-right"> <img src="images/card-icon.png" alt="" > </div>
         </div>
-      </div>
-      
-      <!-- HELPFUL LINKS -->
-      <div class="col-md-3">
-        <h6>HELPFUL LINKS</h6>
-        <ul class="link">
-          <li><a href="#."> Products</a></li>
-          <li><a href="#."> Find a Store</a></li>
-          <li><a href="#."> Features</a></li>
-          <li><a href="#."> Privacy Policy</a></li>
-          <li><a href="#."> Blog</a></li>
-          <li><a href="#."> Press Kit </a></li>
-        </ul>
-      </div>
-      
-      <!-- SHOP -->
-      <div class="col-md-3">
-        <h6>SHOP</h6>
-        <ul class="link">
-          <li><a href="#."> About Us</a></li>
-          <li><a href="#."> Career</a></li>
-          <li><a href="#."> Shipping Methods</a></li>
-          <li><a href="#."> Contact</a></li>
-          <li><a href="#."> Support</a></li>
-          <li><a href="#."> Retailer</a></li>
-        </ul>
-      </div>
-      
-      <!-- MY ACCOUNT -->
-      <div class="col-md-3">
-        <h6>MY ACCOUNT</h6>
-        <ul class="link">
-          <li><a href="#."> Login</a></li>
-          <li><a href="#."> My Account</a></li>
-          <li><a href="#."> My Cart</a></li>
-          <li><a href="#."> Wishlist</a></li>
-          <li><a href="#."> Checkout</a></li>
-        </ul>
-      </div>
-      
-      <!-- Rights -->
-      <div class="rights">
-        <p>©  2016 ecoshop All right reserved. </p>
-        <div class="scroll"> <a href="#wrap" class="go-up"><i class="lnr lnr-arrow-up"></i></a> </div>
       </div>
     </div>
   </footer>
 </div>
-<script src="js/jquery-1.11.3.min.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery-1.12.4.min.js"></script> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap.min.js" ></script> 
 <script src="js/own-menu.js"></script> 
 <script src="js/jquery.lighter.js"></script> 
+<script src="js/jquery.magnific-popup.min.js"></script> 
 <script src="js/owl.carousel.min.js"></script> 
-
-<!-- SLIDER REVOLUTION 4.x SCRIPTS  --> 
-<script type="text/javascript" src="rs-plugin/js/jquery.tp.t.min.js"></script> 
-<script type="text/javascript" src="rs-plugin/js/jquery.tp.min.js"></script> 
 <script src="js/main.js"></script>
 </body>
 </html>
