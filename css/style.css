@@ -1438,9 +1438,9 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 .simple-head {
 	position: relative;
 	min-height: 600px;
-	/*margin-right: 300px;
-	background: #f1eff4 url(../images/RegistroGratis.jpg) bottom right no-repeat;*/
-}
+	margin-right: 300px;
+	/*background: #f1eff4 url(../images/WaferBanner.jpg) bottom right no-repeat;*/
+}	
 .simple-head .position-center-center {
 	width: 100%;
 	padding-top: 100px;
