@@ -1437,9 +1437,9 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 }
 .simple-head {
 	position: relative;
-	min-height: 800px;
-	margin-right: 500px;
-	/*background: #f1eff4 url(../images/RegistroGratis.jpg) bottom right no-repeat;*/
+	min-height: 600px;
+	/*margin-right: 300px;
+	background: #f1eff4 url(../images/RegistroGratis.jpg) bottom right no-repeat;*/
 }
 .simple-head .position-center-center {
 	width: 100%;
