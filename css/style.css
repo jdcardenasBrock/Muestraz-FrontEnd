@@ -208,6 +208,17 @@ a:hover, a:focus {
 .customcolor1 {
 	color: #448aff;
 }
+.colorMorado{
+	color:#4b33a8;
+	font-weight: 600;
+}
+.colorAmarillo{
+	color: #ffe115 !important;
+}
+.bg_gray_morado{
+	background-color:#7b6db57d;
+}
+
 .gray-bg {
 	background: #f5f5f5 !important;
 }
@@ -1439,7 +1450,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	position: relative;
 	min-height: 600px;
 	margin-right: 300px;
-	/*background: #f1eff4 url(../images/WaferBanner.jpg) bottom right no-repeat;*/
+	background: #f1eff4 url(../videos/membresia.mov) bottom right no-repeat;
 }	
 .simple-head .position-center-center {
 	width: 100%;
@@ -4663,7 +4674,7 @@ input[type=number] {
       Shipment
 ========================================================*/
 .shipment {
-	padding: 100px 0;
+	padding: 80px 0;
 }
 .shipment ul li {
 	position: relative;
